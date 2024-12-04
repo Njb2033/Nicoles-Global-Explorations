@@ -1,0 +1,239 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Import a cute, playful font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+
+/* Global styles */
+body {
+    font-family: 'Quicksand', sans-serif; /* Apply cute, friendly font */
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Main header section */
+.main-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+}
+
+.main-header h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.main-header p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+header h1 {
+    color: white;
+    font-size: 2em;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #ffffff; /* White background for nav */
+    padding: 15px 0; /* Add padding to make the nav bar bigger */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative; /* Needed for dropdown positioning */
+    margin-right: 30px; /* Space between menu items */
+}
+
+/* Navigation link styling */
+nav ul li a {
+    color: #000000; /* Black text */
+    text-decoration: none;
+    font-size: 1.4rem; /* Larger font size */
+    padding: 12px 20px; /* Add padding for more clickable area */
+    display: inline-block;
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for links */
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #000000; /* Change to black on hover */
+    color: #ffffff; /* Change text color to white */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Active state for links */
+nav ul li a:active {
+    background-color: #333333; /* Dark grey when active */
+    transform: scale(1); /* Prevent excessive scaling */
+}
+
+/* Dropdown menu styles */
+nav ul li ul.dropdown {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    top: 100%; /* Position below the parent list item */
+    left: 0;
+    min-width: 200px; /* Set a minimum width for the dropdown */
+    background-color: #ffffff; /* White background for dropdown */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow to dropdown for visibility */
+    z-index: 100; /* Ensure dropdown is above other content */
+}
+
+nav ul li:hover > ul.dropdown {
+    display: block; /* Show dropdown when the parent is hovered */
+}
+
+nav ul li ul.dropdown li {
+    display: block; /* Make each dropdown item stack vertically */
+}
+
+nav ul li ul.dropdown li a {
+    color: #000000; /* Black text for dropdown links */
+    padding: 10px 20px; /* Add padding for spacing */
+}
+
+/* Dropdown item hover effect */
+nav ul li ul.dropdown li a:hover {
+    background-color: #000000; /* Black background for hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Hover effect for links */
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #000000; /* Change to black on hover */
+    color: #ffffff; /* Change text color to white */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Active state for links */
+nav ul li a:active {
+    background-color: #333333; /* Dark grey when active */
+    transform: scale(1); /* Prevent excessive scaling */
+}
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+    width: 360px;
+    height: 448px;
+    border-radius: 8px; /* Rounded corners for slideshow */
+}
+
+/* Make sure each slide is hidden by default */
+.mySlides {
+    display: none;
+}
+
+/* Image styling */
+img {
+    width: 360px;
+    height: 448px;
+    object-fit: cover;
+    border: 5px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Box layout for sections */
+.extra-section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.extra-section h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.extra-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.extra-section .image-pair {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.extra-section .image-slot {
+    width: 48%;
+}
+
+.extra-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Gallery Styles */
+.image-gallery {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.image-gallery h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
+}
+
+.gallery-item {
+    width: 320px;
+    height: 427px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

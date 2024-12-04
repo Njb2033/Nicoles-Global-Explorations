@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="imggallery.css">
+    <title>Image Gallery</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Explore</a></li>
+                <li><a href="mmedia.html">Navigate  </a>
+                    <!-- Dropdown menu for Start Here -->
+                    <ul class="dropdown">
+                        <li><a href="solo-female-travel.html">Solo Female Travel</a></li>
+                        <li><a href="packing-tips.html">Packing Tips</a></li>
+                        <li><a href="planning.html">Planning a Trip</a></li>
+                    </ul>
+                </li>
+                <li><a href="Slideshow.html">Blog</a></li>
+                <!-- Missing closing <li> tag here, closing it now -->
+                <li><a href="imggallery.html">Culture Gallery</a></li> <!-- Completed the <li> element -->
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="introduction">
+            <p>Welcome to our Image Gallery, showcasing the vibrant culture and stunning landscapes of South America. From the bustling streets of Buenos Aires to the diverse beauty of the continent, each image captures a unique essence. Explore, enjoy, and discover the wonders of South America while staying connected to real-time updates from each location.</p>
+        </div>
+
+        <!-- Countdown Section -->
+        <div class="countdown">
+            <h2>Countdown to New Blog Post</h2>
+			<h3> New Destination: Galapagos Islands, Ecuador </h3>
+            <div id="timer">
+                <span id="days"></span> days
+                <span id="hours"></span> hours
+                <span id="minutes"></span> minutes
+                <span id="seconds"></span> seconds
+            </div>
+        </div>
+
+        <!-- New Image Gallery Section -->
+        <div class="gallery">
+            <!-- Image 1 -->
+            <div class="gallery-item">
+                <a href="https://www.britannica.com/place/Peru/Daily-life-and-social-customs" target="_blank">
+                    <img src="japan.jpg" alt="Beautiful scenery of Japan">
+                </a>
+                <figcaption>
+                    Lima: The Heart of Peru<br>
+                    Time Zone: UTC +9
+                </figcaption>
+            </div>
+            <!-- Image 2 -->
+            <div class="gallery-item">
+                <a href="https://worldcitiescultureforum.com/city/buenos-aires/" target="_blank">
+                    <img src="buenosaires.jpg" alt="Vibrant streets of Buenos Aires">
+                </a>
+                <figcaption>
+                    Buenos Aires: A Cultural Melting Pot<br>
+                    Time Zone: UTC -3
+                </figcaption>
+            </div>
+            <!-- Image 3 -->
+            <div class="gallery-item">
+                <a href="https://www.britannica.com/place/Brazil/Cultural-life" target="_blank">
+                    <img src="africa.jpg" alt="Diverse landscapes of Africa">
+                </a>
+                <figcaption>
+                    Brazil: Land of Carnival and Beaches<br>
+                    Time Zone: UTC varies by region (e.g., UTC +2 to UTC +4)
+                </figcaption>
+            </div>
+            <!-- Image 4 -->
+            <div class="gallery-item">
+                <a href="https://www.enchantingtravels.com/destinations/south-america/colombia/colombia-culture/" target="_blank">
+                    <img src="paris.jpg" alt="Iconic Eiffel Tower in Paris">
+                </a>
+                <figcaption>
+                    Colombia: A Mix of Nature and Culture<br>
+                    Time Zone: UTC +1
+                </figcaption>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="gallery.js"></script>
+</body>
+<footer>
+        <p>&copy; Nicoles Global Explorations</p>
+    </footer>
+</html>

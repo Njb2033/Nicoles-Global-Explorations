@@ -1,0 +1,206 @@
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f4e1d2, #d9c6a1); /* Soft tan earthy gradient background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: rgba(210, 180, 140, 0.8); /* Semi-transparent earthy tan background */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #ffffff; /* White background for nav */
+    padding: 15px 0; /* Add padding to make the nav bar bigger */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative; /* Needed for dropdown positioning */
+    margin-right: 30px; /* Space between menu items */
+}
+
+/* Navigation link styling */
+nav ul li a {
+    color: #000000; /* Black text */
+    text-decoration: none;
+    font-size: 1.4rem; /* Larger font size */
+    padding: 12px 20px; /* Add padding for more clickable area */
+    display: inline-block;
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for links */
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #000000; /* Change to black on hover */
+    color: #ffffff; /* Change text color to white */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Active state for links */
+nav ul li a:active {
+    background-color: #333333; /* Dark grey when active */
+    transform: scale(1); /* Prevent excessive scaling */
+}
+
+/* Dropdown menu styles */
+nav ul li ul.dropdown {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    top: 100%; /* Position below the parent list item */
+    left: 0;
+    min-width: 200px; /* Set a minimum width for the dropdown */
+    background-color: #ffffff; /* White background for dropdown */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow to dropdown for visibility */
+    z-index: 100; /* Ensure dropdown is above other content */
+}
+
+nav ul li:hover > ul.dropdown {
+    display: block; /* Show dropdown when the parent is hovered */
+}
+
+nav ul li ul.dropdown li {
+    display: block; /* Make each dropdown item stack vertically */
+}
+
+nav ul li ul.dropdown li a {
+    color: #000000; /* Black text for dropdown links */
+    padding: 10px 20px; /* Add padding for spacing */
+}
+
+/* Dropdown item hover effect */
+nav ul li ul.dropdown li a:hover {
+    background-color: #000000; /* Black background for hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Hover effect for links */
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #000000; /* Change to black on hover */
+    color: #ffffff; /* Change text color to white */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Active state for links */
+nav ul li a:active {
+    background-color: #333333; /* Dark grey when active */
+    transform: scale(1); /* Prevent excessive scaling */
+}
+
+/* Main Heading Styling */
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    color: #ffffff; /* White text */
+    font-size: 2.5em; /* Larger font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+}
+
+/* Gallery Styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    gap: 15px; /* Gap between items */
+}
+
+figure {
+    margin: 0;
+    border: none; /* Remove border */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Include shadow transition */
+}
+
+figure:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Increased shadow on hover */
+}
+
+img {
+    border-radius: 10px 10px 0 0; /* Rounded top corners for images */
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    padding: 15px; /* Increased padding */
+    text-align: center;
+    color: #333;
+    background-color: rgba(210, 180, 140, 0.9); /* Earthy tan for captions */
+    border-radius: 0 0 10px 10px; /* Rounded bottom corners for captions */
+    line-height: 1.5;
+    font-weight: bold; /* Bold captions */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0; /* Increased spacing */
+    }
+
+    .gallery {
+        flex-direction: column; /* Stack gallery items */
+        align-items: center;
+    }
+
+    figure {
+        width: 90%; /* Full width on small screens */
+        max-width: 400px; /* Limit width for better display */
+    }
+}
+
+/* Introduction Styling */
+.introduction {
+    text-align: center; /* Center the text */
+    margin: 20px; /* Add space around the paragraph */
+    font-size: 1.1em; /* Slightly larger font size */
+    color: #333; /* Text color */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for contrast */
+    padding: 15px; /* Padding around the text */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Countdown Styling */
+.countdown {
+    border: 2px solid #8e7c56; /* Earthy tan border */
+    background-color: rgba(244, 233, 210, 0.8); /* Light earthy tan background */
+    padding: 20px; /* Padding inside the countdown */
+    margin: 20px auto; /* Center with margin */
+    text-align: center; /* Center the text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.countdown h2 {
+    color: #333; /* Heading color */
+    margin-bottom: 15px; /* Space below heading */
+}
+
+#timer {
+    font-size: 1.5em; /* Increase font size for timer */
+    color: #ff4500; /* Timer color */
+}

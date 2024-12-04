@@ -1,0 +1,248 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif; /* Default font */
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f8ff; /* Soft background color */
+}
+
+/* Apply a cursive-like font for headings and text */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/* You can also use 'Pacifico' or 'Dancing Script' or similar cursive fonts */
+
+header h1 {
+    font-family: 'Dancing Script', cursive; /* Cursive font for the header */
+    color: #d34a69; /* Cute reddish color */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #f0f8ff; /* Soft pinkish background */
+}
+
+/* Header photo styling */
+.header-photo {
+    display: inline-block;
+    padding: 10px;
+    border: 5px solid #8d7b56; /* Earthy border color */
+    border-radius: 8px;
+    background-color: #fff; /* White background inside the border */
+}
+
+.header-photo img {
+    width: 600px;
+    height: 778px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow around the image */
+}
+
+/* Navigation styling */
+nav {
+    background-color: #ffffff; /* White background for nav */
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Navigation links list styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Center the list items */
+}
+
+/* Individual list items in the navigation */
+nav ul li {
+    display: inline-block;
+    position: relative; /* Needed for dropdown positioning */
+    margin-right: 30px;
+}
+
+/* Links inside the navigation */
+nav ul li a {
+    color: #000000; /* Black text */
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 12px 20px;
+    display: inline-block;
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #000000; /* Change to black */
+    color: #FFFFFF; /* White text on hover */
+    transform: scale(1.05); /* Slight size increase on hover */
+}
+
+/* Active state of navigation links */
+nav ul li a:active {
+    background-color: #333333; /* Darker grey when active */
+    transform: scale(1); /* Reset size when clicked */
+}
+
+/* Dropdown menu styles */
+nav ul li ul.dropdown {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    top: 100%; /* Position dropdown below the list item */
+    left: 0;
+    min-width: 200px;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for dropdown */
+    z-index: 100; /* Ensure dropdown is on top */
+}
+
+/* Show dropdown on hover */
+nav ul li:hover > ul.dropdown {
+    display: block;
+}
+
+/* Dropdown items styling */
+nav ul li ul.dropdown li {
+    display: block; /* Stack dropdown items vertically */
+}
+
+/* Links inside the dropdown */
+nav ul li ul.dropdown li a {
+    color: #000000; /* Black text for dropdown links */
+    padding: 10px 20px;
+}
+
+/* Hover effect for dropdown links */
+nav ul li ul.dropdown li a:hover {
+    background-color: #000000; /* Black background on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Main section styles */
+main {
+    margin-top: 20px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* New sections for Solo Traveler */
+section#section1, section#section2, section#section3 {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+section#section1 h2, section#section2 h2, section#section3 h2 {
+    color: #d34a69; /* Cute reddish color */
+    font-family: 'Dancing Script', cursive; /* Cursive font for section headings */
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* Style for lists in new sections */
+section#section1 ul, section#section2 ul, section#section3 ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+/* Space out the bullet points */
+section#section1 ul li, section#section2 ul li, section#section3 ul li {
+    margin-bottom: 20px; /* Increased spacing between list items */
+}
+
+/* Image container in sections */
+section#section1 .image-container, section#section2 .image-container, section#section3 .image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+section#section1 .image-container img, section#section2 .image-container img, section#section3 .image-container img {
+    max-width: 80%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Links in the sections */
+section#section1 a, section#section2 a, section#section3 a {
+    color: #d34a69; /* Cute reddish color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section#section1 a:hover, section#section2 a:hover, section#section3 a:hover {
+    color: #000; /* Change color to black on hover */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #35424a;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px; /* Add space between items */
+    }
+
+    /* Ensure dropdown works on mobile */
+    nav ul li ul.dropdown {
+        position: relative;
+        top: 0;
+        left: 0;
+        min-width: auto;
+    }
+
+    /* Adjust heading sizes for small screens */
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Make the header photo responsive */
+    .header-photo img {
+        width: 100%; /* Full-width image on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Adjust the image container and section layout */
+    section#section1, section#section2, section#section3 {
+        padding: 15px;
+    }
+
+    section#section1 .image-container img, section#section2 .image-container img, section#section3 .image-container img {
+        width: 100%; /* Full-width images on small screens */
+        height: auto;
+    }
+}
