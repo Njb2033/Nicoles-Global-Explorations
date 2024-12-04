@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Travel Destinations of 2024 in South America</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+    <ul>
+        <li><a href="index.html">Explore</a></li>
+        <li><a href="mmedia.html">Navigate</a>
+            <!-- Dropdown menu for Start Here -->
+            <ul class="dropdown">
+                <li><a href="solo-female-travel.html">Solo Female Travel</a></li>
+                <li><a href="packing tips.html">Packing Tips</a></li>
+                <li><a href="planning.html">Planning a Trip</a></li>
+            </ul>
+        </li>
+		<li><a href="Slideshow.html">Blog</a></li>
+		<li><a href="imggallery.html">Culture Gallery</a><li>
+    </ul>
+</nav>
+
+    <main>
+        <h1 class="highlight-heading">Embark on a Journey with Nicole’s Global Exploration Blog!</h1>
+        <p class="enhanced-paragraph">Embark on an unforgettable adventure through South America, where vibrant cultures, breathtaking landscapes, and hidden gems await! Discover insider tips and tricks that will make your journey even more thrilling, and get ready to experience the heart and soul of this incredible continent like never before!</p>
+
+        <!-- Flex container for sidebar and image -->
+        <div class="content-wrapper">
+            <!-- Sidebar with the table -->
+            <div class="sidebar">
+                <h2>Top Travel Destinations of 2024</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Buenos Aires</td><td>Argentina</td></tr>
+                        <tr><td>Rio de Janeiro</td><td>Brazil</td></tr>
+                        <tr><td>Cusco</td><td>Peru</td></tr>
+                        <tr><td>La Paz</td><td>Bolivia</td></tr>
+                        <tr><td>Quito</td><td>Ecuador</td></tr>
+                        <tr><td>Santiago</td><td>Chile</td></tr>
+                        <tr><td>Cartagena</td><td>Colombia</td></tr>
+                        <tr><td>Montevideo</td><td>Uruguay</td></tr>
+                        <tr><td>Asunción</td><td>Paraguay</td></tr>
+                        <tr><td>São Paulo</td><td>Brazil</td></tr>
+                        <tr><td>Santa Marta</td><td>Colombia</td></tr>
+                        <tr><td>Salvador</td><td>Brazil</td></tr>
+                        <tr><td>Valparaíso</td><td>Chile</td></tr>
+                        <tr><td>Arequipa</td><td>Peru</td></tr>
+                        <tr><td>Bariloche</td><td>Argentina</td></tr>
+                        <tr><td>Galápagos Islands</td><td>Ecuador</td></tr>
+                        <tr><td>Iguaçu Falls</td><td>Brazil/Argentina</td></tr>
+                        <tr><td>Paraty</td><td>Brazil</td></tr>
+                        <tr><td>La Serena</td><td>Chile</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Image Section -->
+            <div class="image-section">
+                <header class="header">
+                    <div class="image-container">
+                        <img src="Images/Call to action image.jpg" alt="Explore the World" class="explore-image">
+                    </div>
+                </header>
+            </div>
+        </div>
+
+        <!-- Image Gallery Section -->
+       <div class="gallery-section">
+			<h2 class="highlight-heading">Start Planning Your Dream Trip</h2>
+			<div class="gallery">
+				<a href="solo-female-travel.html">
+					<img src="Images/Solo girl trip.jpg" alt="Solo girl trip" class="gallery-item">
+				</a>
+				<a href="planning.html">
+					<img src="Images/How i travel.jpg" alt="How I travel" class="gallery-item">
+				</a>
+				<a href="Packing tips.html">
+					<img src="Images/Packing tips.jpg" alt="Packing tips for travel" class="gallery-item">
+				</a>
+			</div>
+		</div>
+    </main>
+<!-- Travel Feedback Form Section -->
+    <section class="feedback-section">
+        <h1>Travel Feedback Form</h1>
+        <p>Your insights help us enhance travel experiences. Please share your feedback!</p>
+        <form id="travelFeedbackForm" action="#" method="post" onsubmit="return validateForm()">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required>
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Travel Experience</legend>
+                <label for="destination">Favorite Destination:</label>
+                <input type="text" id="destination" name="destination" required>
+
+                <label for="tripType">Type of Trip:</label>
+                <select id="tripType" name="tripType" required>
+                    <option value="">Select</option>
+                    <option value="solo">Solo</option>
+                    <option value="family">Family</option>
+                    <option value="business">Business</option>
+                    <option value="friends">Friends</option>
+                </select>
+
+                <label for="newsletter">Subscribe to our travel newsletter:</label>
+                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+            </fieldset>
+
+            <fieldset>
+                <legend>Feedback</legend>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Share your travel experiences and suggestions..."></textarea>
+
+                <label for="experienceRating">Rate Your Overall Experience:</label>
+                <input type="range" id="experienceRating" name="experienceRating" min="1" max="10" value="5" step="1">
+                <span id="experienceRatingValue">5</span>
+                <p>Please rate your overall experience with us:</p>
+                <p>1 - Very Poor</p>
+                <p>10 - Excellent</p>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; Nicoles Global Explorations</p>
+    </footer>
+</body>
+</html>
